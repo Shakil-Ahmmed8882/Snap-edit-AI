@@ -69,7 +69,7 @@ const MobileNav = () => {
                 })}
 
                 <li className="p-4 pt-8 ">
-                <UserButton afterSignOutUrl="/" showName/>
+                <UserButton afterSignOutUrl={process.env.NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL} showName/>
                 </li>
               </ul>
             </SignedIn>

@@ -79,8 +79,8 @@ const Sidebar = () => {
                   </li>
                 );
               })}
-              <li className="flex flex-center cursor-pointer gap-4 p-4">
-                <UserButton afterSignOutUrl="/" showName />
+              <li className="flex flex-center cursor-pointer gap-4 pl-2 p-4">
+                <UserButton afterSignOutUrl={process.env.NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL} showName />
               </li>
             </ul>
           </SignedIn>
